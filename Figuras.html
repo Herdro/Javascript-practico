@@ -22,6 +22,29 @@
             <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
         </form>
     </section>
+    <section>
+        <h2>Calcular el área y perimetro de un Triángulo</h2>
+        <form style="display: flex; flex-direction: column; align-items: flex-start;">
+            <label for="InputTrianguloLado1">
+                Escribe la dimension del lado derecho del Triángulo:
+            </label>
+            <input id="InputTrianguloLado1" type="number" style="width: 200px; align-self: start; ">
+            <label for="InputTrianguloLado2">
+                Escribe la dimension del lado izquierdo del Triángulo:
+            </label>
+            <input id="InputTrianguloLado2" type="number" style="width: 200px; align-self: start;">
+            <label for="InputTrianguloBase">
+                Escribe la dimension de la base del Triángulo:
+            </label>
+            <input id="InputTrianguloBase" type="number" style="width: 200px; align-self: start;">
+            <label for="InputTrianguloAltura">
+                Escribe la dimension de la altura del Triángulo:
+            </label>
+            <input id="InputTrianguloAltura" type="number" style="width: 200px; align-self: start;">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+    </section>
 
     <script src="./Figuras.js"></script>
 </body>

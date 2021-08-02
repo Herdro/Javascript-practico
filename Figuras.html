@@ -11,7 +11,7 @@
         <h1>Figuras Geometricas</h1>
         <p>Este es el primer taller de curso práctico de JavaScript</p>
     </header>
-    <section>
+    <section class="cuadrado">
         <h2>Calcular el área y perimetro de un cuadrado</h2>
         <form action="">
             <label for="InputCuadrado">
@@ -22,7 +22,7 @@
             <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
         </form>
     </section>
-    <section>
+    <section class="triangulo">
         <h2>Calcular el área y perimetro de un Triángulo</h2>
         <form style="display: flex; flex-direction: column; align-items: flex-start;">
             <label for="InputTrianguloLado1">
@@ -43,6 +43,33 @@
             <input id="InputTrianguloAltura" type="number" style="width: 200px; align-self: start;">
             <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+        <h2>Calcular el área y perimetro de un Triángulo Isósceles</h2>
+        <form style="display: flex; flex-direction: column; align-items: flex-start;">
+            <label for="InputTrianguloIsoscelesLado1">
+                Escribe la dimension del lado derecho del Triángulo:
+            </label>
+            <input id="InputTrianguloIsoscelesLado1" type="number" style="width: 200px; align-self: start; ">
+            <label for="InputTrianguloIsoscelesLado2">
+                Escribe la dimension del lado izquierdo del Triángulo:
+            </label>
+            <input id="InputTrianguloIsoscelesLado2" type="number" style="width: 200px; align-self: start;">
+            <label for="InputTrianguloIsoscelesBase">
+                Escribe la dimension de la base del Triángulo:
+            </label>
+            <input id="InputTrianguloIsoscelesBase" type="number" style="width: 200px; align-self: start;">
+            <button type="button" onclick="calcularAreaTrianguloIsosceles()">Calcular área</button>
+        </form>
+    </section>
+    <section class="circulo">
+        <h2>Calcular el área y perimetro de un Circulo</h2>
+        <form style="display: flex; flex-direction: column; align-items: flex-start;">
+            <label for="InputCirculo">
+                Escribe la dimension del radio del Circulo:
+            </label>
+            <input id="InputCirculo" type="number" style="width: 200px; align-self: start; ">
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
         </form>
     </section>
 

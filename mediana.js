@@ -24,7 +24,7 @@ function esPar(numero){
 }
 
 function calcularMediana(lista){
-    const listaOrdenada = lista.sort((a,b) => a[1] - b[1]);
+    const listaOrdenada = lista.sort((a,b) => a - b);
     const mitadLista = parseInt(listaOrdenada.length / 2);
 
     if (esPar(listaOrdenada.length)) {
